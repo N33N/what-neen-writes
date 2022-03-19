@@ -33,7 +33,7 @@
 		// register user if there are no errors in the form
 		if (count($errors) == 0) {
 			$password = md5($password_1);//encrypt the password before saving in the database
-			$query = "INSERT INTO users (username, email, phone, password) 
+			$query = "INSERT INTO register_data.users (username, email, phone, password) 
 					  VALUES('$username', '$email', '$phone','$password')";
 			mysqli_query($db, $query);
 
@@ -60,7 +60,7 @@
 
 		if (count($errors) == 0) {
 			$password = md5($password);
-			$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+			$query = "SELECT * FROM register_data.users WHERE username='$username' AND password='$password'";
 			$results = mysqli_query($db, $query);
 
 			if (mysqli_num_rows($results) == 1) {
