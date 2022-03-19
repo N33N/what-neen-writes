@@ -36,6 +36,7 @@
     .input-group label {
       display: block;
       text-align: left;
+      font-family: "Helvetica", "Courier New", monospace;
       margin: 3px;
     }
     .input-group input {
