@@ -3,7 +3,8 @@
     <html>
     <head>
       <title>Neen's Registration Page</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <img src="image/LargeCat.jpg" alt="Cute Cat" style="width:1400px;height:500px;">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
       <div class="header">
