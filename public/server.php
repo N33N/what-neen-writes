@@ -8,7 +8,8 @@
 	$_SESSION['success'] = "";
 
 	// connect to database
-	$db = mysqli_connect('localhost', 'root', '', 'register_data');
+	$dbopts = parse_url(getenv('JAWSDB_URL'));
+	$db = mysqli_connect($dbopts["host"], $dbopts["user"], $dbopts["pass"], ltrim($dbopts["path"],'/'));
 
 	// REGISTER USER
 	if (isset($_POST['reg_user'])) {
