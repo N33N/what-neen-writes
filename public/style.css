@@ -29,14 +29,6 @@
       border-radius: 0px 0px 10px 10px;
     }
 
-    html { 
-      background-image: url("LargeCat.jpg"); no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
     .input-group {
       margin: 10px 0px 10px 0px;
     }
